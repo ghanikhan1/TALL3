@@ -13,6 +13,9 @@
         <!-- Scripts -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script src="{{ asset('js/app.js') }}" defer></script>
+
+        @livewireStyles
+
         <!--
         we use upper script instead of vite for login css
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -34,5 +37,6 @@
                 {{ $slot }}
             </main>
         </div>
+        @livewireScripts
     </body>
 </html>
